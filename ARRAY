@@ -1,0 +1,19 @@
+#!/usr/bin/python3
+
+
+import   numpy    as np
+
+# creating  1D  array
+
+a=np.array([1,2,3,4])
+b=np.array([3,6,7,9])
+
+#  adding  same  dimension array
+c=a+b
+print(c)
+#   multiplication of array   
+m=a*b
+print(m)
+# add  particular  value in each  element of the array
+a5=a+5
+print(a5)
