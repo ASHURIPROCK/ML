@@ -1,0 +1,20 @@
+ import cv 
+ #starting camera 
+ cap=cv2.VideoCapture(0)
+ #   this is primary camera(0), use 1 for secondary camera
+ 
+ # to check camera is started
+ if cap.isOpened() :
+    print("camera is readdy to take pic")
+else :    
+    print("camera is not ready")
+    
+# now we can take read input from camera
+status,img=cap.read()   #it  will . take first pic
+
+# now showwing
+cv2.imshow('liveimage',img)
+cv2.waitkey(0)
+# to close camera 
+cap.release(0)
+ 
